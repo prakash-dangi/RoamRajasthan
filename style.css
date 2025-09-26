@@ -1,0 +1,118 @@
+.germania-one-regular {
+  font-family: "Germania One", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: -80px; /* hidden initially */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(154, 32, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: top 0.5s ease;
+  z-index: 10;
+}
+
+nav.show {
+  top: 0; /* slide down when scrolled */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* First Section */
+.intro-section {
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("images/intro.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.intro-section h1 {
+  font-family: "Germania One", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 6rem;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  color: bisque;
+}
+
+.intro-section p {
+  font-size: 1.3rem;
+  max-width: 600px;
+}
+
+/* Second Section */
+.catalogue {
+  height: 100vh;
+  background: #ebe2c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* no spacing */
+  perspective: 1000px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("images/CatalogueBG.jpg") no-repeat center center/cover;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: transform 0.5s ease, scale 0.3s ease;
+}
+
+.card.center {
+  width: 300px;
+  height: 400px;
+  z-index: 5;
+}
+
+.card.left {
+  transform: scale(0.9); /* shrink only */
+  z-index: 3;
+}
+
+.card.right {
+  transform: scale(0.9); /* shrink only */
+  z-index: 3;
+}
