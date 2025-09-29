@@ -14,9 +14,7 @@
 }
 
 /* Slight delay for "सा" so it appears after "पधारो" */
-.page-greet span:last-child {
-  animation-delay: 1s;
-}
+
 
 @keyframes fadeIn {
   from {
