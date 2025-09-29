@@ -59,6 +59,7 @@ body {
   opacity: 0;
   transform: translateY(20px);
   transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  text-shadow: 2px 2px 8px #000, 0 0 2px #fff;
 }
 
 .city-description.visible {
@@ -90,7 +91,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 2px 8px 0 rgba(0,0,0,0.35);
   text-align: center;
   transform: translateY(50px);
   opacity: 0;
@@ -112,6 +113,7 @@ body {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: bisque;
+  text-shadow: 2px 2px 8px #000, 0 0 2px #fff;
 }
 .card p {
   font-size: 1rem;
@@ -256,6 +258,7 @@ body {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 1rem;
+  padding-bottom: 2rem;
   -webkit-overflow-scrolling: touch; /* smooth on iOS */
   scroll-snap-type: x mandatory;     /* optional: nice snapping */
 }
