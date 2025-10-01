@@ -1,81 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Germania+One&family=Sora:wght@400;600&display=swap");
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Sora:wght@400;600&display=swap');
 
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-/* --- Body & Background --- */
 body {
-  margin: 0;
   font-family: "Sora", sans-serif;
-  min-height: 100vh;
+  background-color: #fdfaf5;
+  color: #333;
   overflow-x: hidden;
-  color: #fff;
 }
 
-/* --- Page Border --- */
-.page-border {
-  position: relative;
-  padding: 40px; /* space for border */
-  box-sizing: border-box;
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  z-index: 1000;
+  background-color: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.page-border::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
- 
-  background: url('kota-border.jpg') no-repeat center/cover;
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-family: "Germania One", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
-/* --- City Header --- */
-.city-header {
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f5b94b;
+}
+
+/* City Hero Section */
+.city-hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('kota-border.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 3rem 1rem 2rem;
-  background: rgba(0,0,0,0.3);
-  text-shadow: 2px 2px 8px #000, 0 0 2px #fff;
+  color: #fff;
+  padding: 20px;
 }
 
-.city-header h1 {
-  font-family: "Germania One", serif;
-  font-size: 3rem;
-  margin: 0;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.city-header h1.visible {
-  transform: translateY(0);
-  opacity: 1;
+.hero-content h1 {
+  font-family: "Germania One", cursive;
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: #f5b94b;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-/* Description animation */
-.city-description {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-  text-shadow: 2px 2px 8px #000, 0 0 2px #fff;
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  max-width: 600px;
+  margin-top: 15px;
 }
 
-.city-description.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* Main Content Wrapper */
+.city-content-section {
+    padding: 60px 5%;
 }
 
-/* --- Card Container --- */
+/* Glass Cards in Hero */
 .card-container {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 30px;
   flex-wrap: wrap;
+  margin-top: 40px; /* Spacing from title */
 }
 
 .card-link {
@@ -83,74 +112,87 @@ body {
   color: inherit;
 }
 
-/* --- Frosted Glass Cards --- */
 .card {
-  flex: 1 1 250px;
-  max-width: 300px;
+  flex: 1 1 280px;
+  max-width: 320px;
   padding: 1.5rem;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 2px 8px 0 rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.6s ease, box-shadow 0.3s ease;
-}
-
-.card.visible {
-  transform: translateY(0);
-  opacity: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
 }
 
 .card h2 {
   font-family: "Germania One", serif;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: bisque;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 .card p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #f0f0f0;
 }
 
-
-/* --- Attractions Section --- */
-#attractions {
-  background: #f5e2ca;            /* section background white */
-  padding: 3rem 1.5rem;
+/* Attractions & Shopping Section */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
 }
 
-/* Each attraction card */
+.section-title {
+    font-family: "Germania One", cursive;
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #f5b94b;
+    margin: 10px auto 0;
+}
+
 .attraction {
   display: flex;
   gap: 2rem;
-  align-items: stretch;
-  max-width: 1100px;
-  margin: 0 auto 2rem;
-  background: #f8f9fb;            /* distinguishable from white section bg */
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #fff;
   border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12); /* cast shadow on section */
-  overflow: hidden;               /* keep rounded corners on children */
-  transition: transform 0.3s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Alternate left-right layout */
+.attraction:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
 .attraction:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-/* Image wrapper */
 .attraction__img {
   position: relative;
-  flex: 1 1 48%;
-  min-height: 260px;
+  flex: 1 1 45%;
+  min-height: 300px;
 }
 
 .attraction__img img {
@@ -160,7 +202,6 @@ body {
   display: block;
 }
 
-/* Map link pinned bottom-center of image */
 .map-link {
   position: absolute;
   left: 50%;
@@ -190,18 +231,14 @@ body {
   fill: currentColor;
 }
 
-/* Text block */
 .attraction__content {
-  flex: 1 1 52%;
-  padding: 1.5rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1 1 55%;
+  padding: 2rem;
 }
 
 .attraction__content h3 {
   font-family: "Germania One", serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 0 0.5rem;
   color: #222;
 }
@@ -209,47 +246,14 @@ body {
 .attraction__content p {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
+  line-height: 1.7;
+  color: #444;
 }
 
-.attraction:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
-}
-
-
-/* Responsive */
-@media (max-width: 900px) {
-  .attraction {
-    flex-direction: column;
-  }
-  .attraction:nth-child(even) {
-    flex-direction: column;
-  }
-  .attraction__img {
-    min-height: 220px;
-  }
-}
-
-/* --- Food Places Section --- */
-#food-places {
-  background: #faf4ef;
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-#food-places .section-heading {
-  font-family: "Germania One", serif;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #222;
-}
-
-/* ===== Carousel fixes / improvements ===== */
+/* Food Carousel Section */
 .carousel-wrapper {
   position: relative;
-  overflow: hidden; /* hide overflow so row stays inside container */
+  overflow: hidden;
 }
 
 .carousel {
@@ -258,44 +262,35 @@ body {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 1rem;
-  padding-bottom: 2rem;
-  -webkit-overflow-scrolling: touch; /* smooth on iOS */
-  scroll-snap-type: x mandatory;     /* optional: nice snapping */
+  -webkit-overflow-scrolling: touch;
 }
 
 .carousel::-webkit-scrollbar { display: none; }
 .carousel { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Cards */
 .food-card {
-  flex: 0 0 280px;
+  flex: 0 0 300px;
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   text-align: center;
-  scroll-snap-align: center;   /* snap */
-  transform-origin: center;
-  z-index: 1;                  /* keep cards under the buttons */
-  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .food-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  z-index: 2; /* only slightly higher than default, still below buttons */
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .food-card img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
-  display: block;
 }
 
 .food-card h3 {
-  margin: 0.8rem 0 0.3rem;
+  margin: 0.8rem 0.5rem 0.3rem;
   font-size: 1.3rem;
   color: #333;
 }
@@ -307,83 +302,87 @@ body {
   margin-bottom: 0.8rem;
 }
 
-/* Reuse map-link */
 .food-card .map-link {
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  position: relative;
-  left: auto;
-  bottom: auto;
+  position: static;
   transform: none;
+  margin-bottom: 1rem;
+  color: #333;
+  background-color: #f0f0f0;
+}
+.food-card .map-link:hover {
+    background-color: #e0e0e0;
 }
 
-/* Carousel Buttons */
+
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.38);
-  color: #fff;
+  background: rgba(255,255,255,0.8);
+  color: #333;
   border: none;
-  padding: 10px 12px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   border-radius: 50%;
   font-size: 1.2rem;
-  transition: background 0.2s, opacity 0.2s;
-  z-index: 9999; /* <- very high so buttons stay above hovered cards */
-  opacity: 0.75;  /* faded by default */
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  transition: background 0.2s, opacity 0.2s, box-shadow 0.2s, left 0.3s, right 0.3s;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .carousel-btn:hover {
-  background: rgba(0,0,0,0.65);
-  opacity: 1;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.left-btn { left: 8px; }
-.right-btn { right: 8px; }
+.left-btn { left: -50px; }
+.right-btn { right: -50px; }
 
-.carousel-wrapper .carousel, .carousel-wrapper .carousel * {
-  pointer-events: auto;
+.carousel-wrapper:hover .left-btn {
+    left: 15px;
 }
 
-/* Other places */
-.other-food {
-  margin-top: 2.5rem;
-  text-align: center;   /* changed */
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.carousel-wrapper:hover .right-btn {
+    right: 15px;
 }
 
-@media (max-width: 600px) {
-  .carousel { gap: 1rem; padding: 0.8rem; }
-  .food-card { flex: 0 0 240px; }
-  .carousel-btn { padding: 8px 10px; font-size: 1rem; }
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 20px 5%;
 }
 
-.other-food h3 {
-  font-family: "Germania One", serif;
-  color: #222;
-  margin-bottom: 0.5rem;
+/* Responsive Design */
+@media (max-width: 900px) {
+  .attraction {
+    flex-direction: column;
+  }
+  .attraction:nth-child(even) {
+    flex-direction: column;
+  }
 }
 
-.short-line {
-  width: 200px;
-  height: 4px;
-  background: #c49a6c;
-  margin: 0.5em auto;
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    .city-hero {
+        height: auto;
+        padding: 100px 20px 40px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
 }
 
-.other-food ul {
-  display: inline-block; /* keeps list compact in center */
-  text-align: left;      /* ensures bullet text is left-aligned */
-}
-
-
-.other-food li {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-  color: #444;
-}

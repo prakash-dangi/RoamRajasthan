@@ -1,81 +1,118 @@
-.germania-one-regular {
-  font-family: "Germania One", system-ui;
-  font-weight: 200;
-  font-style: normal;
-}
-
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Sora", sans-serif;
+  background-color: #fdfaf5;
+  color: #333;
   overflow-x: hidden;
 }
 
 /* Navigation Bar */
 nav {
   position: fixed;
-  top: -80px; /* hidden initially */
+  top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  color: rgb(154, 32, 32);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  transition: top 0.5s ease;
-  z-index: 10;
+  padding: 20px 5%;
+  z-index: 1000;
+  transition: background-color 0.4s ease, padding 0.4s ease;
 }
 
-nav.show {
-  top: 0; /* slide down when scrolled */
+nav.scrolled {
+  background-color: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-family: "Germania One", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 35px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-/* First Section */
-.intro-section {
-  height: 75vh;
+nav ul li a:hover {
+  color: #f5b94b;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("images/intro.jpg") no-repeat center center/cover;
+    url("images/intro.jpg") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  padding: 0 20px;
 }
 
-.intro-section h1 {
-  font-family: "Germania One", system-ui;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 6rem;
-  margin-bottom: 10px;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+.hero-content h1 {
+  font-family: "Germania One", cursive;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   color: bisque;
 }
 
-.intro-section p {
-  font-size: 1.3rem;
-  max-width: 600px;
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  max-width: 650px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
-/* Second Section */
+.cta-button {
+  display: inline-block;
+  background-color: #f5b94b;
+  color: #333;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #e4ac42;
+  transform: translateY(-3px);
+}
+
+/* Explore Section (Catalogue) */
 .catalogue {
   height: 100vh;
   background: #ebe2c3;
@@ -135,4 +172,31 @@ nav ul li a {
 
 .card-link{
   text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 20px 5%;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 15px 5%;
+  }
+
+  nav ul {
+    margin-top: 15px;
+    gap: 20px;
+  }
 }

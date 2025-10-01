@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rajasthan Travel Guide</title>
+    <title>Roam Rajasthan - Your Ultimate Travel Guide</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Germania+One&family=Sora:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -16,28 +16,29 @@
   <body>
     <!-- Navigation Bar -->
     <nav id="navbar">
+      <a href="#" class="nav-logo">Roam Rajasthan</a>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cities</a></li>
-        <li><a href="#">Itinerary</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="pages/cities/cities.html">Cities</a></li>
+        <li><a href="#explore">Explore</a></li>
         <li><a href="#">Reviews</a></li>
       </ul>
     </nav>
 
-    <!-- Section 1: Intro -->
-    <section class="intro-section">
-      <div>
+    <!-- Section 1: Hero -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
         <h1>Roam Rajasthan</h1>
-      </div>
-      <div>
         <p>
-          Discover hidden gems, food, shopping, and nature — all in one place!
+          Your ultimate guide to the land of kings. Discover hidden gems, savor
+          authentic cuisine, and immerse yourself in the vibrant culture.
         </p>
+         <a href="#explore" class="cta-button">Start Exploring</a>
       </div>
     </section>
 
-    <!-- Section 2: Catalogue -->
-    <section class="catalogue">
+    <!-- Section 2: Explore (Catalogue) -->
+    <section class="catalogue" id="explore">
       <a href="" class="card-link">
         <div class="card left">
           <img src="images/logo1.PNG" alt="">
@@ -58,20 +59,24 @@
         </div>
       </a>
     </section>
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Roam Rajasthan. All rights reserved.</p>
+    </footer>
+
 
     <script>
-      // Show navbar after scrolling past intro section
+      // Show navbar with solid background after scrolling
       window.addEventListener("scroll", function () {
         const navbar = document.getElementById("navbar");
-        const introHeight =
-          document.querySelector(".intro-section").offsetHeight;
-
-        if (window.scrollY >= introHeight - 50) {
-          navbar.classList.add("show");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
         } else {
-          navbar.classList.remove("show");
+          navbar.classList.remove("scrolled");
         }
       });
     </script>
   </body>
 </html>
+

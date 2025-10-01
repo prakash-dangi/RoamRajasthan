@@ -1,357 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kota - Rajasthan Travel Guide</title>
+  <title>Explore Jaipur - Roam Rajasthan</title>
   <link rel="stylesheet" href="jaipur.css">
 </head>
-
 <body>
-  <section>
-    <div class="page-border">
-      <!-- City Header -->
-      <header class="city-header">
-        <h1>KOTA</h1>
-        <p class="city-description">The City of Chambal, a heritage-rich and serene destination, known for its rivers
-          and historic sites.</p>
-      </header>
 
-      <!-- Glass Cards -->
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a href="../../index.html" class="nav-logo">Roam Rajasthan</a>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../pages/cities/cities.html">Cities</a></li>
+      <li><a href="#">Itinerary</a></li>
+      <li><a href="#">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Glass Cards -->
+  <header class="city-hero">
+    <div class="hero-content">
+      <h1>Jaipur</h1>
+      <p>The vibrant capital of Rajasthan, famously known as the Pink City for its stunning historic architecture.</p>
+      
+      <!-- Intro Cards -->
       <section class="card-container">
         <a href="#attractions" class="card-link">
           <div class="card">
             <h2>Attractions</h2>
-            <p>Explore places like Seven Wonders Park, Garh Palace, Chambal Garden, and the banks of the Chambal river.
-            </p>
+            <p>Witness the grandeur of royal palaces, majestic forts, and bustling historic markets.</p>
           </div>
         </a>
-
         <a href="#food-places" class="card-link">
           <div class="card">
             <h2>Food</h2>
-            <p>Relish Kota Kachori, Dal Bati Churma, Mirchi Vada, and traditional sweets reflecting local flavors.</p>
+            <p>Savor the iconic Pyaaz Kachori, Ghewar, and a rich tapestry of Rajasthani thalis.</p>
           </div>
         </a>
-
         <a href="#shopping" class="card-link">
           <div class="card">
             <h2>Shopping</h2>
-            <p>From Kota Doria sarees to handicrafts, take home a piece of Kota’s vibrant culture.</p>
+            <p>Explore bustling bazaars for exquisite jewelry, vibrant textiles, and unique handicrafts.</p>
           </div>
         </a>
-
-
       </section>
     </div>
-  </section>
+  </header>
 
-  <!-- Attractions -->
-  <section id="attractions">
-    <div class="attraction">
-      <div class="attraction__img">
-        <img src="kota-cover.jpg" alt="Seven Wonders Park, Kota">
-        <a class="map-link" href="https://maps.google.com/?q=Seven+Wonders+Park+Kota" target="_blank" rel="noopener">
-          <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-          </svg>
-          View on Maps
-        </a>
-      </div>
-      <div class="attraction__content">
-        <h3>Seven Wonders Park</h3>
-        <p>See mini replicas of the world’s seven wonders—Taj Mahal, Eiffel Tower, Great Pyramid and more—lined along
-          the edge of Kishore Sagar. A popular sunset spot and great for photos.</p>
-      </div>
-    </div>
+  <!-- Main Content Section -->
+  <main class="city-content-section">
 
-    <div class="attraction">
-      <div class="attraction__img">
-        <img src="kota-garh-palace.jpg" alt="Garh Palace (City Palace), Kota">
-        <a class="map-link" href="https://maps.google.com/?q=Garh+Palace+Kota" target="_blank" rel="noopener">
-          <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-          </svg>
-          View on Maps
-        </a>
-      </div>
-      <div class="attraction__content">
-        <h3>Garh Palace (City Palace)</h3>
-        <p>A sprawling palace complex on the Chambal with beautiful archways, fresco rooms, and the Maharao Madho Singh
-          Museum. Offers a glimpse into Hadoti art and royal life.</p>
-      </div>
-    </div>
-
-    <div class="attraction">
-      <div class="attraction__img">
-        <img src="kota-chambal-garden.jpg" alt="Chambal Garden, Kota">
-        <a class="map-link" href="https://maps.google.com/?q=Chambal+Garden+Kota" target="_blank" rel="noopener">
-          <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-          </svg>
-          View on Maps
-        </a>
-      </div>
-      <div class="attraction__content">
-        <h3>Chambal Garden</h3>
-        <p>Lush riverside park famous for calm walks and views of the Chambal River. Look out for boat rides and the
-          nearby suspension bridge for panoramic shots.</p>
-      </div>
-    </div>
-
-    <div class="attraction">
-      <div class="attraction__img">
-        <img src="kota-kishore-sagar-jagmandir.jpg" alt="Kishore Sagar Lake & Jagmandir Palace, Kota">
-        <a class="map-link" href="https://maps.google.com/?q=Kishore+Sagar+Jagmandir+Kota" target="_blank"
-          rel="noopener">
-          <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-          </svg>
-          View on Maps
-        </a>
-      </div>
-      <div class="attraction__content">
-        <h3>Kishore Sagar Lake & Jagmandir</h3>
-        <p>An iconic man-made lake with a picturesque palace pavilion (Jagmandir) at its center. Best experienced in the
-          evening when the pavilion and lakeside glow with lights.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Famous Food Places -->
-  <section id="food-places">
-    <h2 class="section-heading">Famous Food Places in Kota</h2>
-
-    <div class="carousel-wrapper">
-      <!-- Left Button -->
-      <button class="carousel-btn left-btn">&#10094;</button>
-
-      <!-- Scrollable Row -->
-      <div class="carousel">
-        <div class="food-card">
-          <img src="kota-border.jpg" alt="Ratan Sweets">
-          <h3>Ratan Sweets</h3>
-          <p>Famous for Kota Kachori and fresh jalebis. A must-visit for traditional flavors.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Ratan+Sweets+Kota" target="_blank" rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
+    <!-- Attractions Section -->
+    <section id="attractions" class="content-section">
+      <h2 class="section-title">Must-Visit Attractions</h2>
+      <div class="attraction">
+        <div class="attraction__img">
+          <img src="hawaMahal.jpg" alt="Hawa Mahal">
+          <a class="map-link" href="https://maps.app.goo.gl/NB8dZadUXGLHYphC7" target="_blank" rel="noopener">
+            <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
             View on Maps
           </a>
         </div>
-
-        <div class="food-card">
-          <img src="food2.jpg" alt="Maheshwari Misthan Bhandar">
-          <h3>Maheshwari Misthan Bhandar</h3>
-          <p>Known for Dal Bati Churma and sweets. A staple of Rajasthani cuisine.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Maheshwari+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
-        </div>
-
-        <div class="food-card">
-          <img src="food3.jpg" alt="Jodhpur Misthan Bhandar">
-          <h3>Jodhpur Misthan Bhandar</h3>
-          <p>Specializes in Mirchi Vada, kachoris, and authentic namkeen varieties.</p>
-          <a class="map-link" href="https://maps.google.com/?q=Jodhpur+Misthan+Bhandar+Kota" target="_blank"
-            rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-            </svg>
-            View on Maps
-          </a>
+        <div class="attraction__content">
+          <h3>Hawa Mahal</h3>
+          <p>An iconic pink sandstone palace with 953 intricately designed windows. This "Palace of Winds" was built to allow royal women to observe street festivities unseen from the outside.</p>
         </div>
       </div>
+      <div class="attraction">
+        <div class="attraction__img">
+          <img src="AmerFort.jpg" alt="Amer Fort">
+          <a class="map-link" href="https://maps.app.goo.gl/yZjEXVP7ENZioyCt7" target="_blank" rel="noopener">
+            <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
+            View on Maps
+          </a>
+        </div>
+        <div class="attraction__content">
+          <h3>Amer Fort</h3>
+          <p>A majestic fort located on a hilltop, known for its artistic Hindu style elements. Explore its cobbled paths, large ramparts, and the stunning Sheesh Mahal (Mirror Palace).</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Right Button -->
-      <button class="carousel-btn right-btn">&#10095;</button>
-    </div>
+    <!-- Food Places Section -->
+    <section id="food-places" class="content-section">
+      <h2 class="section-title">Famous Food Places</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left-btn">&#10094;</button>
+        <div class="carousel">
+          <div class="food-card">
+            <img src="LMB.jpg" alt="Laxmi Misthan Bhandar (LMB)">
+            <h3>Laxmi Misthan Bhandar</h3>
+            <p>A legendary restaurant in the heart of the old city, famous for its traditional Rajasthani thali and sweets like Ghewar.</p>
+            <a class="map-link" href="https://maps.app.goo.gl/RG2XmTGxssNipgpm7" target="_blank" rel="noopener">
+              <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
+              View on Maps
+            </a>
+          </div>
+          <div class="food-card">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/18/06/18/rawat-misthan-bhandar.jpg" alt="Rawat Misthan Bhandar">
+            <h3>Rawat Misthan Bhandar</h3>
+            <p>Home to the original and most famous Pyaaz Kachori in Jaipur. A must-visit for any food lover.</p>
+            <a class="map-link" href="https://maps.app.goo.gl/hG9oG2p8cZz7x4hG8" target="_blank" rel="noopener">
+              <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
+              View on Maps
+            </a>
+          </div>
+          <div class="food-card">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/26/59/e8/masala-chowk.jpg" alt="Masala Chowk">
+            <h3>Masala Chowk</h3>
+            <p>An open-air food court that brings together the best of Jaipur's street food in one vibrant location.</p>
+            <a class="map-link" href="https://maps.app.goo.gl/uLg8kHjQp6yA2jYm6" target="_blank" rel="noopener">
+              <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
+              View on Maps
+            </a>
+          </div>
+        </div>
+        <button class="carousel-btn right-btn">&#10095;</button>
+      </div>
+    </section>
 
-    <!-- Other Places List -->
-    <div class="other-food">
-      <h3>Other Popular Spots</h3>
-      <div class="short-line"></div>
-      <ul>
-        <li><strong>Sharma Dhaba</strong> – Classic North Indian meals with authentic flavors.</li>
-        <li><strong>Uday Misthan Bhandar</strong> – Renowned for samosas and namkeen items.</li>
-        <li><strong>Chhappan Bhog</strong> – A modern outlet with wide varieties of sweets.</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Shopping Section -->
+    <section id="shopping" class="content-section">
+        <h2 class="section-title">Shopping Highlights</h2>
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="https://www.jaipur.city/images/bapu-bazar-jaipur.jpg" alt="Bapu Bazaar">
+          </div>
+          <div class="attraction__content">
+            <h3>Bapu Bazaar</h3>
+            <p>One of the most famous markets in Jaipur, known for its vibrant atmosphere and a wide array of Rajasthani textiles, handicrafts, and jutis (traditional footwear).</p>
+          </div>
+        </div>
+      </section>
 
-  <section id="shopping">
-  <div class="attraction">
-    <div class="attraction__img">
-      <img src="kota-cover.jpg" alt="Seven Wonders Park, Kota">
-      <a class="map-link" href="https://maps.google.com/?q=Seven+Wonders+Park+Kota" target="_blank" rel="noopener">
-        <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-        </svg>
-        View on Maps
-      </a>
-    </div>
-    <div class="attraction__content">
-      <h3>Seven Wonders Park</h3>
-      <p>See mini replicas of the world’s seven wonders—Taj Mahal, Eiffel Tower, Great Pyramid and more—lined along
-        the edge of Kishore Sagar. A popular sunset spot and great for photos.</p>
-    </div>
-  </div>
+  </main>
 
-  <div class="attraction">
-    <div class="attraction__img">
-      <img src="kota-garh-palace.jpg" alt="Garh Palace (City Palace), Kota">
-      <a class="map-link" href="https://maps.google.com/?q=Garh+Palace+Kota" target="_blank" rel="noopener">
-        <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-        </svg>
-        View on Maps
-      </a>
-    </div>
-    <div class="attraction__content">
-      <h3>Garh Palace (City Palace)</h3>
-      <p>A sprawling palace complex on the Chambal with beautiful archways, fresco rooms, and the Maharao Madho Singh
-        Museum. Offers a glimpse into Hadoti art and royal life.</p>
-    </div>
-  </div>
-
-  <div class="attraction">
-    <div class="attraction__img">
-      <img src="kota-chambal-garden.jpg" alt="Chambal Garden, Kota">
-      <a class="map-link" href="https://maps.google.com/?q=Chambal+Garden+Kota" target="_blank" rel="noopener">
-        <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-        </svg>
-        View on Maps
-      </a>
-    </div>
-    <div class="attraction__content">
-      <h3>Chambal Garden</h3>
-      <p>Lush riverside park famous for calm walks and views of the Chambal River. Look out for boat rides and the
-        nearby suspension bridge for panoramic shots.</p>
-    </div>
-  </div>
-
-  <div class="attraction">
-    <div class="attraction__img">
-      <img src="kota-kishore-sagar-jagmandir.jpg" alt="Kishore Sagar Lake & Jagmandir Palace, Kota">
-      <a class="map-link" href="https://maps.google.com/?q=Kishore+Sagar+Jagmandir+Kota" target="_blank" rel="noopener">
-        <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" />
-        </svg>
-        View on Maps
-      </a>
-    </div>
-    <div class="attraction__content">
-      <h3>Kishore Sagar Lake & Jagmandir</h3>
-      <p>An iconic man-made lake with a picturesque palace pavilion (Jagmandir) at its center. Best experienced in the
-        evening when the pavilion and lakeside glow with lights.</p>
-    </div>
-  </div>
-  </section>
-
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Roam Rajasthan. All Rights Reserved.</p>
+  </footer>
 
   <script src="jaipur.js"></script>
 </body>
-
 </html>
