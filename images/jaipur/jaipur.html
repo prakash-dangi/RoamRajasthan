@@ -1,147 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore Jaipur - Roam Rajasthan</title>
-  <link rel="stylesheet" href="jaipur.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Jaipur - Roam Rajasthan</title>
+    <link rel="stylesheet" href="jaipur.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <a href="../../index.html" class="nav-logo">Roam Rajasthan</a>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../pages/cities/cities.html">Cities</a></li>
+        <li><a href="#">Itinerary</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </nav>
 
-  <!-- Navigation Bar -->
-  <nav id="navbar">
-    <a href="../../index.html" class="nav-logo">Roam Rajasthan</a>
-    <ul>
-      <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../pages/cities/cities.html">Cities</a></li>
-      <li><a href="#">Itinerary</a></li>
-      <li><a href="#">Reviews</a></li>
-    </ul>
-  </nav>
+    <!-- Hero Section with Glass Cards -->
+    <header class="city-hero">
+      <div class="hero-content">
+        <h1>Jaipur</h1>
+        <p>
+          The vibrant capital of Rajasthan, famously known as the Pink City for
+          its stunning historic architecture.
+        </p>
 
-  <!-- Hero Section with Glass Cards -->
-  <header class="city-hero">
-    <div class="hero-content">
-      <h1>Jaipur</h1>
-      <p>The vibrant capital of Rajasthan, famously known as the Pink City for its stunning historic architecture.</p>
-      
-      <!-- Intro Cards -->
-      <section class="card-container">
-        <a href="#attractions" class="card-link">
-          <div class="card">
-            <h2>Attractions</h2>
-            <p>Witness the grandeur of royal palaces, majestic forts, and bustling historic markets.</p>
+        <!-- Intro Cards -->
+        <section class="card-container">
+          <a href="#attractions" class="card-link">
+            <div class="card">
+              <h2>Attractions</h2>
+              <p>
+                Witness the grandeur of royal palaces, majestic forts, and
+                bustling historic markets.
+              </p>
+            </div>
+          </a>
+          <a href="#food-places" class="card-link">
+            <div class="card">
+              <h2>Food</h2>
+              <p>
+                Savor the iconic Pyaaz Kachori, Ghewar, and a rich tapestry of
+                Rajasthani thalis.
+              </p>
+            </div>
+          </a>
+          <a href="#shopping" class="card-link">
+            <div class="card">
+              <h2>Shopping</h2>
+              <p>
+                Explore bustling bazaars for exquisite jewelry, vibrant
+                textiles, and unique handicrafts.
+              </p>
+            </div>
+          </a>
+        </section>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="city-content-section">
+      <!-- Attractions Section -->
+      <section id="attractions" class="content-section">
+        <h2 class="section-title">Must-Visit Attractions</h2>
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="hawaMahal.jpg" alt="Hawa Mahal" />
+            <a
+              class="map-link"
+              href="https://maps.app.goo.gl/NB8dZadUXGLHYphC7"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                />
+              </svg>
+              View on Maps
+            </a>
           </div>
-        </a>
-        <a href="#food-places" class="card-link">
-          <div class="card">
-            <h2>Food</h2>
-            <p>Savor the iconic Pyaaz Kachori, Ghewar, and a rich tapestry of Rajasthani thalis.</p>
+          <div class="attraction__content">
+            <h3>Hawa Mahal</h3>
+            <p>
+              An iconic pink sandstone palace with 953 intricately designed
+              windows. This "Palace of Winds" was built to allow royal women to
+              observe street festivities unseen from the outside.
+            </p>
           </div>
-        </a>
-        <a href="#shopping" class="card-link">
-          <div class="card">
-            <h2>Shopping</h2>
-            <p>Explore bustling bazaars for exquisite jewelry, vibrant textiles, and unique handicrafts.</p>
+        </div>
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="AmerFort.jpg" alt="Amer Fort" />
+            <a
+              class="map-link"
+              href="https://maps.app.goo.gl/yZjEXVP7ENZioyCt7"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                />
+              </svg>
+              View on Maps
+            </a>
           </div>
-        </a>
+          <div class="attraction__content">
+            <h3>Amer Fort</h3>
+            <p>
+              A majestic fort located on a hilltop, known for its artistic Hindu
+              style elements. Explore its cobbled paths, large ramparts, and the
+              stunning Sheesh Mahal (Mirror Palace).
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="CityPalace.jpg" alt="Amer Fort" />
+            <a
+              class="map-link"
+              href="https://maps.app.goo.gl/yZjEXVP7ENZioyCt7"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                />
+              </svg>
+              View on Maps
+            </a>
+          </div>
+          <div class="attraction__content">
+            <h3>The City Palace</h3>
+            <p>
+              The City Palace in Jaipur, built by Maharaja Sawai Jai Singh II,
+              is a stunning mix of Rajput and Mughal architecture. With grand
+              courtyards, ornate gates, and the royal Chandra Mahal, it
+              beautifully reflects Jaipur’s rich heritage and remains a
+              must-visit attraction.
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="AlbertHall.jpg" alt="Amer Fort" />
+            <a
+              class="map-link"
+              href="https://maps.app.goo.gl/yZjEXVP7ENZioyCt7"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                />
+              </svg>
+              View on Maps
+            </a>
+          </div>
+          <div class="attraction__content">
+            <h3>Albert Hall</h3>
+            <p>
+              The Albert Hall Museum, built in the late 19th century, is
+              Jaipur’s oldest museum and a fine example of Indo-Saracenic
+              architecture. It houses an impressive collection of artifacts,
+              including paintings, sculptures, and textiles, showcasing
+              Rajasthan’s rich art and culture.
+            </p>
+          </div>
+        </div>
       </section>
-    </div>
-  </header>
 
-  <!-- Main Content Section -->
-  <main class="city-content-section">
-
-    <!-- Attractions Section -->
-    <section id="attractions" class="content-section">
-      <h2 class="section-title">Must-Visit Attractions</h2>
-      <div class="attraction">
-        <div class="attraction__img">
-          <img src="hawaMahal.jpg" alt="Hawa Mahal">
-          <a class="map-link" href="https://maps.app.goo.gl/NB8dZadUXGLHYphC7" target="_blank" rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
-            View on Maps
-          </a>
-        </div>
-        <div class="attraction__content">
-          <h3>Hawa Mahal</h3>
-          <p>An iconic pink sandstone palace with 953 intricately designed windows. This "Palace of Winds" was built to allow royal women to observe street festivities unseen from the outside.</p>
-        </div>
-      </div>
-      <div class="attraction">
-        <div class="attraction__img">
-          <img src="AmerFort.jpg" alt="Amer Fort">
-          <a class="map-link" href="https://maps.app.goo.gl/yZjEXVP7ENZioyCt7" target="_blank" rel="noopener">
-            <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
-            View on Maps
-          </a>
-        </div>
-        <div class="attraction__content">
-          <h3>Amer Fort</h3>
-          <p>A majestic fort located on a hilltop, known for its artistic Hindu style elements. Explore its cobbled paths, large ramparts, and the stunning Sheesh Mahal (Mirror Palace).</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Food Places Section -->
-    <section id="food-places" class="content-section">
-      <h2 class="section-title">Famous Food Places</h2>
-      <div class="carousel-wrapper">
-        <button class="carousel-btn left-btn">&#10094;</button>
-        <div class="carousel">
-          <div class="food-card">
-            <img src="LMB.jpg" alt="Laxmi Misthan Bhandar (LMB)">
-            <h3>Laxmi Misthan Bhandar</h3>
-            <p>A legendary restaurant in the heart of the old city, famous for its traditional Rajasthani thali and sweets like Ghewar.</p>
-            <a class="map-link" href="https://maps.app.goo.gl/RG2XmTGxssNipgpm7" target="_blank" rel="noopener">
-              <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
-              View on Maps
-            </a>
+      <!-- Food Places Section -->
+      <section id="food-places" class="content-section">
+        <h2 class="section-title">Famous Food Places</h2>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left-btn">&#10094;</button>
+          <div class="carousel">
+            <div class="food-card">
+              <img src="LMB.jpg" alt="Laxmi Misthan Bhandar (LMB)" />
+              <h3>Laxmi Misthan Bhandar</h3>
+              <p>
+                A legendary restaurant in the heart of the old city, famous for
+                its traditional Rajasthani thali and sweets like Ghewar.
+              </p>
+              <a
+                class="map-link"
+                href="https://maps.app.goo.gl/RG2XmTGxssNipgpm7"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="map-pin" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                  />
+                </svg>
+                View on Maps
+              </a>
+            </div>
+            <div class="food-card">
+              <img src="RMB.png" alt="Rawat Misthan Bhandar" />
+              <h3>Rawat Misthan Bhandar</h3>
+              <p>
+                Home to the original and most famous Pyaaz Kachori in Jaipur. A
+                must-visit for any food lover.
+              </p>
+              <a
+                class="map-link"
+                href="https://maps.app.goo.gl/hG9oG2p8cZz7x4hG8"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="map-pin" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                  />
+                </svg>
+                View on Maps
+              </a>
+            </div>
+            <div class="food-card">
+              <img src="masalaChowk.jpg" alt="Masala Chowk" />
+              <h3>Masala Chowk</h3>
+              <p>
+                An open-air food court that brings together the best of Jaipur's
+                street food in one vibrant location.
+              </p>
+              <a
+                class="map-link"
+                href="https://maps.app.goo.gl/uLg8kHjQp6yA2jYm6"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="map-pin" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                  />
+                </svg>
+                View on Maps
+              </a>
+            </div>
+            <div class="food-card">
+              <img src="GulabJiChai.jpg" alt="Laxmi Misthan Bhandar (LMB)" />
+              <h3>GulabJiChai</h3>
+              <p>
+                Famous for its masala chai and snacks like samosas and kachoris,
+                this cozy café is a local favorite.
+              </p>
+              <a
+                class="map-link"
+                href="https://maps.google.com/?q=26.853164,75.804784"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="map-pin" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                  />
+                </svg>
+                View on Maps
+              </a>
+            </div>
+            <div class="food-card">
+              <img src="CHokhi-DHani.jpg" alt="Laxmi Misthan Bhandar (LMB)" />
+              <h3>chokhi dhani</h3>
+              <p>
+                A cultural village offering authentic Rajasthani food, folk
+                performances, and traditional experiences.
+              </p>
+              <a
+                class="map-link"
+                href="https://maps.google.com/?q=26.8500,75.8200"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="map-pin" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z"
+                  />
+                </svg>
+                View on Maps
+              </a>
+            </div>
           </div>
-          <div class="food-card">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/18/06/18/rawat-misthan-bhandar.jpg" alt="Rawat Misthan Bhandar">
-            <h3>Rawat Misthan Bhandar</h3>
-            <p>Home to the original and most famous Pyaaz Kachori in Jaipur. A must-visit for any food lover.</p>
-            <a class="map-link" href="https://maps.app.goo.gl/hG9oG2p8cZz7x4hG8" target="_blank" rel="noopener">
-              <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
-              View on Maps
-            </a>
-          </div>
-          <div class="food-card">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/26/59/e8/masala-chowk.jpg" alt="Masala Chowk">
-            <h3>Masala Chowk</h3>
-            <p>An open-air food court that brings together the best of Jaipur's street food in one vibrant location.</p>
-            <a class="map-link" href="https://maps.app.goo.gl/uLg8kHjQp6yA2jYm6" target="_blank" rel="noopener">
-              <svg class="map-pin" viewBox="0 0 24 24"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8.25A2.25 2.25 0 1 1 12 6a2.25 2.25 0 0 1 0 4.5z" /></svg>
-              View on Maps
-            </a>
-          </div>
-        </div>
-        <button class="carousel-btn right-btn">&#10095;</button>
-      </div>
-    </section>
 
-    <!-- Shopping Section -->
-    <section id="shopping" class="content-section">
+          <button class="carousel-btn right-btn">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- Shopping Section -->
+      <section id="shopping" class="content-section">
         <h2 class="section-title">Shopping Highlights</h2>
         <div class="attraction">
           <div class="attraction__img">
-            <img src="https://www.jaipur.city/images/bapu-bazar-jaipur.jpg" alt="Bapu Bazaar">
+            <img src="bapuBazaar.jpg" alt="Bapu Bazaar" />
           </div>
           <div class="attraction__content">
             <h3>Bapu Bazaar</h3>
-            <p>One of the most famous markets in Jaipur, known for its vibrant atmosphere and a wide array of Rajasthani textiles, handicrafts, and jutis (traditional footwear).</p>
+            <p>
+              One of the most famous markets in Jaipur, known for its vibrant
+              atmosphere and a wide array of Rajasthani textiles, handicrafts,
+              and jutis (traditional footwear).
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="WTP.jpg" alt="Bapu Bazaar" />
+          </div>
+          <div class="attraction__content">
+            <h3>World Trade Park</h3>
+            <p>
+              World Trade Park is a premier shopping and entertainment
+              destination in Jaipur, located in Malviya Nagar. Spanning over 52
+              acres, it features over 200 national and international brands,
+              themed streets like Oxford Street and Dubai Bazaar, and a
+              multiplex cinema. The mall's unique architecture and diverse
+              offerings make it a popular spot for both locals and tourists.
+            </p>
+          </div>
+        </div>
+
+        <div class="attraction">
+          <div class="attraction__img">
+            <img src="Gaurav-Tower.jpg" alt="Bapu Bazaar" />
+          </div>
+          <div class="attraction__content">
+            <h3>Gaurav-Tower</h3>
+            <p>
+              Gaurav Tower, established in 1995, is one of Jaipur's oldest and
+              most bustling shopping centers, situated in Malviya Nagar.
+              Covering approximately 200,000 sq. ft., it houses a mix of branded
+              stores, local boutiques, a food court, and entertainment options.
+              Known for its vibrant atmosphere, GT attracts thousands of
+              visitors daily
+            </p>
           </div>
         </div>
       </section>
+    </main>
 
-  </main>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Roam Rajasthan. All Rights Reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Roam Rajasthan. All Rights Reserved.</p>
-  </footer>
-
-  <script src="jaipur.js"></script>
-</body>
+    <script src="jaipur.js"></script>
+  </body>
 </html>

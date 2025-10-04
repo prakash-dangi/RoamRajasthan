@@ -197,7 +197,7 @@ nav ul li a:hover {
 
 .attraction__img img {
   width: 100%;
-  height: 100%;
+  height: 350px;
   object-fit: cover;
   display: block;
 }
@@ -384,4 +384,28 @@ footer {
     .card-container {
         flex-direction: column;
     }
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px; /* space between cards */
+  padding-right: 20px; /* extra padding so last card is fully visible */
+  box-sizing: border-box;
+  transition: transform 0.016s linear;
+}
+
+.food-card {
+  flex: 0 0 auto; /* prevents shrinking */
+  width: 300px; /* or your desired card width */
+  box-sizing: border-box;
+}
+.food-places{
+  background-color: bisque;
 }
