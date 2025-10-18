@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Day - Roam Rajasthan</title>
+    <link rel="stylesheet" href="itinerary.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <a href="../../index.php" class="nav-logo">Roam Rajasthan</a>
+        <ul>
+            <li><a href="../../index.php">Home</a></li>
+            <li><a href="../cities/cities.php">Cities</a></li>
+            <li><a href="itinerary.php">Itinerary</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="itinerary-page">
+        <header class="itinerary-header">
+            <h1>Plan Your Day</h1>
+            <p>Select a city to view a curated itinerary designed to help you make the most of your visit.</p>
+        </header>
+
+        <section class="grid-container">
+            <!-- Item 1: Top-Left -->
+            <a href="jaipur/jaipur-itinerary.php" class="card-link grid-item grid-item-1">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../images/jaipur/hawaMahal.jpg');">
+                    <h2>Jaipur</h2>
+                </div>
+            </a>
+            <!-- Item 2: Bottom-Left -->
+            <a href="jodhpur/jodhpur-itinerary.php" class="card-link grid-item grid-item-2">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../images/jodhpur/jodhpur-cover.jpg');">
+                    <h2>Jodhpur</h2>
+                </div>
+            </a>
+            <!-- Item 3: Center-Tall -->
+            <a href="udaipur/udaipur-itinerary.php" class="card-link grid-item grid-item-3">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../images/udaipur/udaipur-cover.avif');">
+                    <h2>Udaipur</h2>
+                </div>
+            </a>
+            <!-- Item 4: Top-Right -->
+            <a href="kota/kota-itinerary.php" class="card-link grid-item grid-item-4">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../images/kota/kota-cover.jpg');">
+                    <h2>Kota</h2>
+                </div>
+            </a>
+            <!-- Item 5: Middle-Right -->
+             <a href="bikaner/bikaner-itinerary.php" class="card-link grid-item grid-item-5">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../images/bikaner/bikaner-cover.jpg');">
+                    <h2>Bikaner</h2>
+                </div>
+            </a>
+            <!-- Item 6: Bottom-Wide -->
+            <a href="jaiselmer/jaiselmer-itinerary.php" class="card-link grid-item grid-item-6">
+                <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../images/jaiselmer/jaiselmer-cover.jpg');">
+                    <h2>Jaisalmer</h2>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Roam Rajasthan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
